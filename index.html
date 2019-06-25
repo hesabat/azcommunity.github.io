@@ -1,130 +1,191 @@
 <!doctype html>
 <html>
 	<head>
-		<meta charset="utf-8">
-		<title>Elmaddin Karimov</title>
-		<link rel="icon" type="image/png" href="img/logo.png"/>
-		<!-- Mobile Specific Settings -->
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-		
-		<!-- Google Fonts: Lato -->
-		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic">
-		
-		<!-- Icon Fonts: Entypo -->
-		<link rel="stylesheet" href="css/icons.css">
-		
-		<!-- CSS Styles -->
-		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/skin-silver.css">
-		<noscript><link rel="stylesheet" href="css/no-js.css"></noscript>
-		
+	<title>Hesabatlar</title>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.8.2.js"></script>
+<style type="text/css">
+#overlay {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: #000;
+filter:alpha(opacity=70);
+-moz-opacity:0.7;
+-khtml-opacity: 0.7;
+opacity: 0.7;
+z-index: 100;
+display: none;
+}
+.cnt223 a{
+text-decoration: none;
+}
+.popup{
+width: 100%;
+margin: 0 auto;
+display: none;
+position: fixed;
+z-index: 101;
+}
+.cnt223{
+min-width: 600px;
+width: 600px;
+min-height: 150px;
+margin: 100px auto;
+background: #f3f3f3;
+position: relative;
+z-index: 103;
+padding: 15px 35px;
+border-radius: 5px;
+box-shadow: 0 2px 5px #000;
+}
+.cnt223 p{
+clear: both;
+    color: #555555;
+    /* text-align: justify; */
+    font-size: 20px;
+    font-family: sans-serif;
+}
+.cnt223 p a{
+color: #d91900;
+font-weight: bold;
+}
+.cnt223 .x{
+float: right;
+height: 35px;
+left: 22px;
+position: relative;
+top: -25px;
+width: 34px;
+}
+.cnt223 .x:hover{
+cursor: pointer;
+}
+</style>
+<script type='text/javascript'>
+$(function(){
+var overlay = $('<div id="overlay"></div>');
+overlay.show();
+overlay.appendTo(document.body);
+$('.popup').show();
+$('.close').click(function(){
+$('.popup').hide();
+overlay.appendTo(document.body).remove();
+return false;
+});
+
+
+ 
+
+$('.x').click(function(){
+$('.popup').hide();
+overlay.appendTo(document.body).remove();
+return false;
+});
+});
+</script>
+<div class='popup'>
+<div class='cnt223'>
+<h1>Bildiriş</h1>
+<p>
+<p>Dəyərli həmvətənlər!</p>
+	Nəzərinizə çatdırmaq istəyirik ki, hesabatlardakı müəyyən texniki səhvlər aradan qaldırılıb yenilənir. Həmçinin 9 iyun tədbirinə aid  e-transfer
+	screenshotlardakı bəzi adların qarşısındakı məbləğlər bir neçə şəxs üçün göndərilib.İzahli hesabatda bu ödənişlər ümumi şəkildə deyil, hər bir şəxs üçün ayrıca göstərilib. 
+	Ödəniş edib adını siyahıda görməyən varsa lütfən bizi məlumatlandırın. Göstərdiyiniz birlik və dəstək üçün hər birinizə təşəkkürlər.
+<br/>
+<br/>
+<a href='' class='close'>Bağlayın</a>
+</p>
+</div>
+</div>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+  .budget {
+  background-color: grey;
+  border: none;
+  color: white;
+  padding: 15px 90px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  margin: 4px 2px;
+  cursor: pointer;
+  }
+  .button1 {
+  background-color: #335BFF;
+  border: none;
+  color: white;
+  padding: 15px 55px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  margin: 4px 2px;
+  cursor: pointer;
+  }
+  .button2 {
+  background-color: #FF0000;
+  border: none;
+  color: white;
+  padding: 15px 55px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  margin: 4px 2px;
+  cursor: pointer;
+  }
+  .button3 {
+  background-color: #2ECC71 ;
+  border: none;
+  color: white;
+  padding: 15px 55px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 29px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #C2C9C5 ;
+   color: white;
+   text-align: center;
+}
+</style>
 	</head>
 	<body>
 	
-		<header id="header">
-			<h1><a href="index.html">Elmaddin Karimov</a></h1>
-			<h2>IT Specialist - Project Coordinator, Consultant, Data Analyst</h2>
-		</header>
-		
-		<div id="container">
-			
-			<nav id="mainnav" role="navigation">
-				<ul>
-					<li class="active"><a href="index.html"><i class="icon-home"></i> Home</a></li>
-					<li><a href="about-me.html"><i class="icon-user"></i> About Me</a></li>
-					<li><a href="resume.html"><i class="icon-feather"></i> Resume</a></li>
-					<li><a href="https://github.com/elmaddinkarimov"><i class="icon-github"></i>GitHub</a></li>				
-					<li><a href="https://www.linkedin.com/in/elmaddinkarimov"><i class="icon-linkedin"></i>LinkedIn</a></li>
-					<li><a href="contact.html"><i class="icon-mail"></i> Contact</a></li>
+	<p>
+  <a href="https://hesabat.github.io">
+    <img src="img/cover.JPG" style='width:100%;'style="margin:50px 50px" alt="Aganatiq">
+  </a>
+</p>
+
+<p>href=
+	
+<p><center><strong><font size="40" color="grey">BUDGET</font></strong></center></p> 
+<center><a class="budget">$ 30.14  </a></center>
+<br>
+<br>
+<p><center><strong><font size="40" color="grey">HESABAT</font></strong></center></p> 
+
+	<center><a href="5may.html" class="button1" target='blank'>PICNIC - 5 MAY, 2019 </a></center>
+	<center><a href="11may.html" class="button2" target='blank'>IFTAR - 11 MAY, 2019 </a></center>
+	<center><a href="9june.html" class="button3" target='blank'>PICNIC - 9 JUNE, 2019 </a></center>
+	<br>
+	<br>
+	<br>
+	<br>
 					
-				</ul>
-			</nav>
-			
-			<div class="ribbon available"><span><a href="contact.html">I’m available</a></span></div>
-			
-			<div class="main-content">
-				
-				<div class="welcome-block">
-					<h1 class="section-heading larger">Hello and welcome!</h1>
-					<div class="welcome">
-						<figure class="photo-small"><img src="img/elmaddin.jpg" alt="Elmaddin Karimov"></figure>
-						<p>My name is <strong>Elmaddin</strong> and I’m <strong>IT Specialist</strong>&nbsp; based in Toronto, Ontario.<br> Have a look around and feel free to contact me if you have any questions/comments.</p>
-					</div>
+				<div class="footer">
+				<p><strong>CREATED BY: ELMADDIN KARIMOV</strong></p>
 				</div>
-				
-				<div class="shortcuts">
-					<div class="row">
-						<div class="span6 item-1">
-							<a href="about-me.html">
-								<h2>Learn more about me</h2>
-								<p>I am more than just a computer guy</p>
-								<span class="ico"><i class="icon-user"></i></span>
-							</a>
-						</div>
-						<div class="span6 item-2">
-							<a href="resume.html"> 
-								<h2>View and download my resume</h2>
-								<p>My professional life</p> </br>
-								<span class="ico"><i class="icon-feather"></i></span>
-							</a>
-						</div>
-					</div>
-					<div class="row">
-						<div class="span6 item-3">
-							<a href="https://github.com/elmaddinkarimov"> 
-								<h2>Check out my GitHub profile</h2>
-								<p>My portfolio</p>
-								<span class="ico"><i class="icon-github"></i></span>
-							</a>
-						</div>					
-						<div class="span6 item-4">
-							<a href="https://www.linkedin.com/in/elmaddinkarimov">
-								<h2>Check out my LinkedIn profile</h2>
-								<p>Connect with me</p> </br>
-								<span class="ico"><i class="icon-linkedin"></i></span>
-							</a>
-						</div>
-					</div>
-					<div class="row">	
-						<div class="span6 item-5">
-							<a href="contact.html">
-								<h2>Hire me for your next project</h2>
-								<p>If you think I can help you in any way, Please don't hesitate and get in touch</p>
-								<span class="ico"><i class="icon-mail"></i></span>
-							</a>
-						</div>
-					</div>
-					</div>
-				</div>
-				
-				<div class="social-media-block">
-					<h2 class="section-heading"></h2>
-					<ul class="social-media">
-						<li><a class="tooltip"  title="Elmaddin Karimov"><img src="img/logo.png"></i></a></li>
-					</ul>
-				</div>
-				
-			</div> <!-- /main-content -->
-			
-			
-		</div> <!-- /container -->
-		
-		<footer id="footer">
-			<p></p>
-		</footer> <!-- /footer -->
-				
-		<!-- JavaScript -->
-		<script src="js/jquery.min.js"></script>
-		<script src="js/parsley.min.js"></script>
-		<script src="js/jquery.backstretch.min.js"></script>
-		<script src="js/jquery.cycle2.min.js"></script>
-		<script src="js/jquery.cycle2.swipe.min.js"></script>
-		<script src="js/jquery.tooltipster.min.js"></script>
-		<script src="js/jquery.mixitup.min.js"></script>
-		<script src="js/jquery.magnific-popup.min.js"></script>
-		<script src="js/jquery.placeholder.min.js"></script>
-		<script src="js/twitter-fetcher.min.js"></script>
-		<script src="js/scripts.js"></script>
-		
 	</body>
-</html>
+	</html>
