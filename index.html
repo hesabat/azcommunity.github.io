@@ -31,7 +31,7 @@ z-index: 101;
 }
 .cnt223{
 min-width: 200px;
-width: 200px;
+width: 250px;
 min-height: 150px;
 margin: 100px auto;
 background: #f3f3f3;
@@ -63,6 +63,11 @@ width: 34px;
 .cnt223 .x:hover{
 cursor: pointer;
 }
+.scrollable-menu {
+    height: auto;
+    max-height: 500px;
+    overflow-x: hidden;
+}
 </style>
 <script type='text/javascript'>
 $(function(){
@@ -88,16 +93,26 @@ return false;
 </script>
 <div class='popup'>
 <div class='cnt223'>
+<div class='scrollable-menu'>
 <h1>Bildiriş</h1>
 <p>
 <p>Dəyərli həmvətənlər!</p>
-	Nəzərinizə çatdırmaq istəyirik ki, hesabatlardakı müəyyən texniki səhvlər aradan qaldırılıb yenilənir. Həmçinin 9 iyun tədbirinə aid  e-transfer
-	screenshotlardakı bəzi adların qarşısındakı məbləğlər bir neçə şəxs üçün göndərilib.İzahli hesabatda bu ödənişlər ümumi şəkildə deyil, hər bir şəxs üçün ayrıca göstərilib. 
-	Ödəniş edib adını siyahıda görməyən varsa lütfən bizi məlumatlandırın. Göstərdiyiniz birlik və dəstək üçün hər birinizə təşəkkürlər.
+   Bayram və müxtəlif tədbirlərin təşkilinin  davamlı ola bilməsi üçün edəcəyimiz ianələrlə (donation) 
+   daimi bir FOND olması vacibdir. Onun üçün ianə qəbulu başlamışdır və daimi olacaq. İanələrinizi  
+   aşağıda göstərilən e-mail ünvanına göndərə bilərsiz. İanə qəbul edildiyi an adlar  və məbləğlər 
+   "İanə Cədvəli" bölməsində, ümumi toplanan məbləğ isə "Büdcə" bölməsində hər kəs tərəfindən görülə biləcək.
+	Adının görünməsini istəməyənləri istəkdən asılı olaraq "Anonim - $" və ya adın ilk hərfini "A....- $" yaza bilərik. 
+	<br/>
+	<p>E-transfer:</p>
+	<p>Kimə: Təşkilat Qrupu</p>
+	<p>E-mail: teshkilatqrupu@gmail.com</p>
+	<br/>
+	Göstərdiyiniz birlik və dəstək üçün hər birinizə təşəkkürlər.
 <br/>
 <br/>
 <a href='' class='close'>Bağlayın</a>
 </p>
+</div>
 </div>
 </div>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -160,47 +175,7 @@ return false;
    text-align: center;
 }
 </style>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-.dropbtn {
-  background-color: #3498DB;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-}
 
-.dropbtn:hover, .dropbtn:focus {
-  background-color: #2980B9;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  overflow: auto;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown a:hover {background-color: #ddd;}
-
-.show {display: block;}
-</style>
 
 	</head>
 	<body>
@@ -211,46 +186,11 @@ return false;
   </a>
 </p>
 	
-<center><a class="budget">BUDGET: $ 30.14  </a></center>
-<center>
-<div class="dropdown">
-  <button onclick="myFunction()" class="dropbtn">İanə cədvəli</button>
-  <div id="myDropdown" class="dropdown-content">
-    <a>Qalıq: $30.14</a>
-    <a>Vasif A: </a>
-    <a>Elmaddin: </a>
-	<a>Elgun B: </a>
-    <a>Vasif Z: </a>
-    <a>Natig: </a>
-	<a>Mirali: </a>
-    <a>Javanshir: </a>
-    <a>Anar V: </a>
-    <a
-  </div>
-</div>
+<center><a class="budget">BÜDCƏ: $ 130.14  </a></center>
+<center><a href="donation.html" class="budget" target='blank'>İANƏ CƏDVƏLİ</a></center>
 
-<script>
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
 
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-</script>
-</center>
+
 <br>
 <br>
 <p><center><strong><font size="40" color="grey">HESABAT</font></strong></center></p> 
